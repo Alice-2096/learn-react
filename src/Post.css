@@ -1,0 +1,12 @@
+.Post {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  padding: 40px 20px 40px 20px;
+}
+.byAuthor {
+  color: grey;
+}
+.authorName {
+    color: blue;
+}
