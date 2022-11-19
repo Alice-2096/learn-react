@@ -1,15 +1,16 @@
 import './Post.css';
 
-export default function Post(object) {
+//Post Component 
+export default function Post({ heading, author, body }) {
   return (
     <div className="Post">
       <div className="postHeading">
-        <h2 className="postTitle">{object.heading}</h2>
+        <h2 className="postTitle">{heading}</h2>
         <span className="byAuthor">
-          By <span className="authorName">{object.author}</span>
+          By <span className="authorName">{author}</span>
         </span>
       </div>
-      <p className="postContent">{object.body}</p>
+      <p className="postContent">{body}</p>
     </div>
   );
 }
