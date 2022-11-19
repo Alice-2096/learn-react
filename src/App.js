@@ -4,6 +4,7 @@ import './App.css';
 import CustomButton from './CustomButton.js';
 import Counter from './Counter.js';
 import GamingAccessories from './GamingAccessories.js';
+import Button from './Button.js';
 // //hardcode the object for now
 // let postObj = {
 //   heading: 'This was funny',
@@ -38,21 +39,22 @@ function App() {
   //do something
   return (
     <div className="App">
-      {/* <CustomButton text={'HTML'} isOrange={true}></CustomButton>
-      <CustomButton text={'CSS'} isOrange={false}></CustomButton>
-      <CustomButton text={'React'} isOrange={false}></CustomButton> */}
+      <CustomButton text={'HTML'}></CustomButton>
+      <CustomButton text={'CSS'}></CustomButton>
+      <CustomButton text={'React'}></CustomButton>
 
       {/* <Counter num={2}></Counter>
       <Counter num={3}></Counter>
       <Counter num={4}></Counter> */}
 
-      <GamingAccessories
+      {/* <GamingAccessories
         fstimg={'./earphone.jpg'}
         fsttitle={'earphone'}
         sndimg={'./keyboard.jpg'}
         sndtitle={'keyboard'}
         link={''}
-      ></GamingAccessories>
+      ></GamingAccessories> */}
+      {/* <Button></Button> */}
     </div>
   );
 }
