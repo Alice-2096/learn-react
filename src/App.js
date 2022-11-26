@@ -10,6 +10,7 @@ import Product from './Product.js';
 import Rating from './Rating.js';
 import { useState } from 'react';
 import Names from './Names.js';
+import Formdemo from './Formdemo.js';
 
 // //hardcode the object for now
 // let postObj = {
@@ -30,18 +31,19 @@ function App() {
   //   setRatingVal(newVal);
   // }
 
-  let _items = ['apple', 'samsung', 'htc'];
-  let [items, setItems] = useState(_items);
+  // let _items = ['apple', 'samsung', 'htc'];
+  // let [items, setItems] = useState(_items);
 
-  function _delete(itemName) {
-    setItems((items) => items.filter((x) => x !== itemName));
-  }
+  // function _delete(itemName) {
+  //   setItems((items) => items.filter((x) => x !== itemName));
+  // }
 
   return (
     <div className="App">
       {/* <Rating onChange={changeVal}></Rating>
       <h1>{ratingVal}</h1> */}
-      <Names items={items} onclick={_delete}></Names>
+      {/* <Names items={items} onclick={_delete}></Names> */}
+      <Formdemo></Formdemo>
     </div>
   );
 }
