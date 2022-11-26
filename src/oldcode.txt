@@ -1,0 +1,112 @@
+{/*       
+      <Post
+        heading={postObj.heading}
+        author={postObj.author}
+        body={postObj.body}
+      ></Post>
+
+      <CustomButton text={'HTML'}></CustomButton>
+      <CustomButton text={'CSS'}></CustomButton>
+      <CustomButton text={'React'}></CustomButton>
+
+      <Counter num={2}></Counter>
+      <Counter num={3}></Counter>
+      <Counter num={4}></Counter>
+
+      <GamingAccessories
+        fstimg={'./earphone.jpg'}
+        fsttitle={'earphone'}
+        sndimg={'./keyboard.jpg'}
+        sndtitle={'keyboard'}
+        link={''}
+      ></GamingAccessories>
+
+      <Button></Button> */}
+
+Nov26th 
+//Rendering List
+      //fetch from API, but we hardcode the data for now.
+      let collection = ['java', 'javvascript', 'react', 'html'];
+
+      {collection.map((x) => (
+        <RoundButton label={x}></RoundButton>
+      ))}
+
+//list cont. 
+  function App() {
+  //hardcode the specifications for now
+
+  let products = [
+    {
+      name: 'Apple',
+      specs: [
+        'Rear Camera: xxx',
+        'front Camera: xxx',
+        'specifications xxx',
+        'specifications xxxxxx',
+      ],
+    },
+    {
+      name: 'Nokia',
+      specs: [
+        'Rear Camera: xxx',
+        'front Camera: xxx',
+        'specifications xxx',
+        'specifications xxxxxx',
+      ],
+    },
+  ];
+
+  return (
+    <div className="App">
+      {products.map((x) => (
+        <Product title={x.name} spec={x.specs}></Product>
+      ))}
+    </div>
+  );
+}
+
+//Inclass exercise: Post 
+
+function App() {
+  //hardcode the specifications for now
+
+  let posts = [
+    {
+      heading: 'This was funny',
+      author: 'Simpson',
+      tag: 'node.js',
+      date: 'Thursday Nov.23rd 2022, 4:23:02 pm',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat volutpat nulla, pharetra facilisis dui luctus sed. In eget imperdiet neque. Nunc ullamcorper bibendum tortor, vel volutpat sapien fringilla eget.',
+    },
+    {
+      heading: 'Some thoughts',
+      author: 'Someone',
+      tag: 'Java',
+      date: 'Wednesday Nov.11st 2022, 6:22:11 am',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat volutpat nulla, pharetra facilisis dui luctus sed. In eget imperdiet neque. Nunc ullamcorper bibendum tortor, vel volutpat sapien fringilla eget.',
+    },
+    {
+      heading: 'Ughhhh!! C is driving me crazy',
+      author: 'Anonymous...',
+      tag: 'C',
+      date: 'Monday January.15th 2022, 5:00:03 pm',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat volutpat nulla, pharetra facilisis dui luctus sed. In eget imperdiet neque. Nunc ullamcorper bibendum tortor, vel volutpat sapien fringilla eget.',
+    },
+  ];
+
+  return (
+    <div className="App">
+      {posts.map((x) => (
+        <Post
+          heading={x.heading}
+          author={x.author}
+          tag={x.tag}
+          date={x.date}
+          body={x.body}
+        ></Post>
+      ))}
+    </div>
+  );
+}
+
