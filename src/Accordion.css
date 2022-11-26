@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.big-container {
+    display: flex;
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    padding: 50px;
+    border-radius: 5px;
+}
+.q-and-a {
+    width: 300px;
+    padding-right: 50px;
+}
+.accordion-container{
+    margin-bottom: 20px;
+    border: 1px solid darkgray;
+    position: relative;
+    width: 700px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 0 5px rgb(95, 93, 93);
+    border-radius: 5px;
+}
+header {
+    margin-bottom: 20px;
+}
+.toggle {
+    text-align: center;
+    color: rebeccapurple;
+    font-size: 1.5rem;
+    background-color: lightgrey;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.content {
+    color: rgb(106, 98, 98);
+    overflow: hidden;
+    height:fit-content;
+    transition: all 2s ease-in-out;
+}
+.content.hidden {
+    height: 0px;
+}

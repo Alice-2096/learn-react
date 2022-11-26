@@ -110,3 +110,6 @@ function App() {
   );
 }
 
+{/* <Rating onChange={changeVal}></Rating>
+      <h1>{ratingVal}</h1> */}
+      {/* <Names items={items} onclick={_delete}></Names> */}

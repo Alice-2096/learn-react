@@ -11,6 +11,8 @@ import Rating from './Rating.js';
 import { useState } from 'react';
 import Names from './Names.js';
 import Formdemo from './Formdemo.js';
+import Accordion from './Accordion.js';
+import QandA from './QandA.js';
 
 // //hardcode the object for now
 // let postObj = {
@@ -40,10 +42,10 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Rating onChange={changeVal}></Rating>
-      <h1>{ratingVal}</h1> */}
-      {/* <Names items={items} onclick={_delete}></Names> */}
-      <Formdemo></Formdemo>
+      {/* transition css is not working??
+      <QandA></QandA>  */}
+
+      
     </div>
   );
 }
