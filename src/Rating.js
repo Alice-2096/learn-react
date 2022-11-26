@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Rating() {
+export default function Rating({ onChange }) {
   let [val, setVal] = useState(0);
 
   // function filledStar(value) {
@@ -32,6 +32,7 @@ export default function Rating() {
       <span
         onClick={function showStar() {
           setVal(1);
+          onChange(1);
         }}
         className={val >= 1 ? 'purple' : ''}
       >
@@ -40,6 +41,7 @@ export default function Rating() {
       <span
         onClick={function showStar() {
           setVal(2);
+          onChange(2);
         }}
         className={val >= 2 ? 'purple' : ''}
       >
@@ -48,6 +50,7 @@ export default function Rating() {
       <span
         onClick={function showStar() {
           setVal(3);
+          onChange(3);
         }}
         className={val >= 3 ? 'purple' : ''}
       >
@@ -56,6 +59,7 @@ export default function Rating() {
       <span
         onClick={function showStar() {
           setVal(4);
+          onChange(4);
         }}
         className={val >= 4 ? 'purple' : ''}
       >
@@ -64,6 +68,7 @@ export default function Rating() {
       <span
         onClick={function showStar() {
           setVal(5);
+          onChange(5);
         }}
         className={val >= 5 ? 'purple' : ''}
       >

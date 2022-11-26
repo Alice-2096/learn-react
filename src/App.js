@@ -8,6 +8,8 @@ import Button from './Button.js';
 import RoundButton from './RoundButton.js';
 import Product from './Product.js';
 import Rating from './Rating.js';
+import { useState } from 'react';
+import Names from './Names.js';
 
 // //hardcode the object for now
 // let postObj = {
@@ -23,9 +25,23 @@ import Rating from './Rating.js';
 // //note: Object.values(obj) returns an array of a given object's own property values
 
 function App() {
+  // let [ratingVal, setRatingVal] = useState(0);
+  // function changeVal(newVal) {
+  //   setRatingVal(newVal);
+  // }
+
+  let _items = ['apple', 'samsung', 'htc'];
+  let [items, setItems] = useState(_items);
+
+  function _delete(itemName) {
+    setItems((items) => items.filter((x) => x !== itemName));
+  }
+
   return (
     <div className="App">
-      <Rating></Rating>
+      {/* <Rating onChange={changeVal}></Rating>
+      <h1>{ratingVal}</h1> */}
+      <Names items={items} onclick={_delete}></Names>
     </div>
   );
 }
