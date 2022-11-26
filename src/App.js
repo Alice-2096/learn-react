@@ -7,6 +7,7 @@ import GamingAccessories from './GamingAccessories.js';
 import Button from './Button.js';
 import RoundButton from './RoundButton.js';
 import Product from './Product.js';
+import Rating from './Rating.js';
 
 // //hardcode the object for now
 // let postObj = {
@@ -22,7 +23,11 @@ import Product from './Product.js';
 // //note: Object.values(obj) returns an array of a given object's own property values
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Rating></Rating>
+    </div>
+  );
 }
 
 export default App;

@@ -1,30 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function Rating({ value }) {
-  function filledStar(value) {
-    let val = value;
-    let jsx = [];
-    while (val !== 0) {
-      jsx.push(<span className="purple">&#9733;</span>);
-      val--;
-    }
-    return jsx;
-  }
+export default function Rating() {
+  let [val, setVal] = useState(0);
 
-  function emptyStar(value) {
-    let val = 5 - value;
-    let jsx = [];
-    while (val !== 0) {
-      jsx.push(<span>&#9733;</span>);
-      val--;
-    }
-    return jsx;
-  }
+  // function filledStar(value) {
+  //   let val = value;
+  //   let jsx = [];
+  //   while (val !== 0) {
+  //     jsx.push(<span className="purple">&#9733;</span>);
+  //     val--;
+  //   }
+  //   return jsx;
+  // }
+
+  // function emptyStar(value) {
+  //   let val = 5 - value;
+  //   let jsx = [];
+  //   while (val !== 0) {
+  //     jsx.push(<span>&#9733;</span>);
+  //     val--;
+  //   }
+  //   return jsx;
+  // }
 
   return (
-    <div className="star-container">
-      {filledStar(value)}
-      {emptyStar(value)}
+    // <div className="star-container">
+    //   {filledStar(value)}
+    //   {emptyStar(value)}
+    // </div>
+    <div>
+      <span
+        onClick={function showStar() {
+          setVal(1);
+        }}
+        className={val >= 1 ? 'purple' : ''}
+      >
+        &#9733;
+      </span>
+      <span
+        onClick={function showStar() {
+          setVal(2);
+        }}
+        className={val >= 2 ? 'purple' : ''}
+      >
+        &#9733;
+      </span>
+      <span
+        onClick={function showStar() {
+          setVal(3);
+        }}
+        className={val >= 3 ? 'purple' : ''}
+      >
+        &#9733;
+      </span>
+      <span
+        onClick={function showStar() {
+          setVal(4);
+        }}
+        className={val >= 4 ? 'purple' : ''}
+      >
+        &#9733;
+      </span>
+      <span
+        onClick={function showStar() {
+          setVal(5);
+        }}
+        className={val >= 5 ? 'purple' : ''}
+      >
+        &#9733;
+      </span>
     </div>
   );
 }
