@@ -50,7 +50,7 @@ function App() {
       {/* where to add the sort method? */}
       {/* <SongPage></SongPage> */}
 
-      <NumGenerator></NumGenerator>
+      {/* <NumGenerator></NumGenerator> */}
     </div>
   );
 }
