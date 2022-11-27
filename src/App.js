@@ -1,4 +1,4 @@
-//class exercise -- create a Post component
+//inclass exercise
 import Post from './Post.js';
 import './App.css';
 import CustomButton from './CustomButton.js';
@@ -12,22 +12,11 @@ import { useState } from 'react';
 import Names from './Names.js';
 import Formdemo from './Formdemo.js';
 
+// Nov26 Homework
 import QandA from './QandA.js';
 import SongPage from './SongPage.js';
 import NumGenerator from './NumGenerator.js';
-
-// //hardcode the object for now
-// let postObj = {
-//   heading: 'This was funny',
-//   author: 'Homer Simpson',
-//   body: 'So, I saw this video on Youtube and this guy was teaching ....',
-// };
-
-// //check if the any property of the object is null
-// function isEmpty(obj) {
-//   return Object.values(obj).some((x) => x === null || x === '');
-// }
-// //note: Object.values(obj) returns an array of a given object's own property values
+import MobilePage from './MobilePage.js';
 
 function App() {
   // let [ratingVal, setRatingVal] = useState(0);
@@ -44,13 +33,16 @@ function App() {
 
   return (
     <div className="App">
-      {/* transition css is not working??
-      <QandA></QandA>  */}
+      {/* transition css is not working?? */}
+      {/* <QandA></QandA> */}
 
       {/* where to add the sort method? */}
       {/* <SongPage></SongPage> */}
 
       {/* <NumGenerator></NumGenerator> */}
+
+      {/* need to fix css magnifier | scroll to the right  */}
+      {/* <MobilePage></MobilePage> */}
     </div>
   );
 }
