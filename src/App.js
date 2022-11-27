@@ -11,8 +11,9 @@ import Rating from './Rating.js';
 import { useState } from 'react';
 import Names from './Names.js';
 import Formdemo from './Formdemo.js';
-import Accordion from './Accordion.js';
+
 import QandA from './QandA.js';
+import SongPage from './SongPage.js';
 
 // //hardcode the object for now
 // let postObj = {
@@ -45,7 +46,7 @@ function App() {
       {/* transition css is not working??
       <QandA></QandA>  */}
 
-      
+      <SongPage></SongPage>
     </div>
   );
 }
