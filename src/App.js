@@ -14,6 +14,7 @@ import Formdemo from './Formdemo.js';
 
 import QandA from './QandA.js';
 import SongPage from './SongPage.js';
+import NumGenerator from './NumGenerator.js';
 
 // //hardcode the object for now
 // let postObj = {
@@ -46,7 +47,10 @@ function App() {
       {/* transition css is not working??
       <QandA></QandA>  */}
 
-      <SongPage></SongPage>
+      {/* where to add the sort method? */}
+      {/* <SongPage></SongPage> */}
+
+      <NumGenerator></NumGenerator>
     </div>
   );
 }
