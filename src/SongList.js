@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Song from './Song';
 
 export default function SongList() {
   //fetch from API, but we hardcode the data for now
-  let songs = [
+  let [songs, setSongs] = useState([
     {
       songName: 'death bed',
       artist: 'Cookiee Kawaii',
@@ -24,7 +24,23 @@ export default function SongList() {
       rating: 3,
     },
     { songName: 'Greener', artist: 'FJK', imageSrc: 'vibe.jpg', rating: 5 },
-  ];
+  ]);
+
+  function add() {
+    // this is incorrect! array is a reference type. because React has no way to tell if the content of the array has changed. It can only know whether it's pointing to the same address.
+    // songs.push({
+    //   songName: 'Greener',
+    //   artist: 'FJK',
+    //   imageSrc: 'vibe.jpg',
+    //   rating: 5,
+    // });
+    // setSongs(songs);
+
+    setSongs((x) => [
+      ...x,
+      { songName: 'Greener', artist: 'FJK', imageSrc: 'vibe.jpg', rating: 5 },
+    ]); //this works because setState function declares and initializes a new variable
+  }
 
   return (
     <div>
@@ -36,6 +52,7 @@ export default function SongList() {
           artist={x.artist}
         ></Song>
       ))}
+      <button onClick={add}>click me to add a song</button>
     </div>
   );
 }

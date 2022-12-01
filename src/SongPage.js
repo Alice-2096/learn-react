@@ -10,7 +10,7 @@ export default function SongPage() {
         <hr></hr>
         {/* how to implement these two? */}
         <button>Sort By Title</button>
-        <button>Sort By Rating</button>
+        <button >Sort By Rating</button>
       </header>
       <SongList></SongList>
     </div>

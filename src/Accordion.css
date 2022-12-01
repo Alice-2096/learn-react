@@ -15,6 +15,7 @@
     width: 300px;
     padding-right: 50px;
 }
+
 .accordion-container{
     margin-bottom: 20px;
     border: 1px solid darkgray;
@@ -42,9 +43,10 @@ header {
 .content {
     color: rgb(106, 98, 98);
     overflow: hidden;
-    height:fit-content;
-    transition: all 2s ease-in-out;
+    height: 120px;
+    transition: 2s ease-in-out;
 }
 .content.hidden {
     height: 0px;
+    overflow: hidden;
 }

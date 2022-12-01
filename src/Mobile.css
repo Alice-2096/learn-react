@@ -86,17 +86,24 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 }
 .search-bar > input {
     width: 13rem;
     height: 2rem;
     color: lightgray;   
 }
-.search-bar > i {
+.search-bar i {
     background-color: lightslategray;
     height: 2rem;
-    width: 2rem;  
+    width: 2rem; 
+    display: inline-flex; 
+}
+.search-bar button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
 }
 .mobile-page-body {
     background-color: white;

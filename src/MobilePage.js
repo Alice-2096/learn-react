@@ -13,7 +13,9 @@ export default function MobilePage() {
         <span>Upcoming Mobiles</span>
         <form className="search-bar">
           <input defaultValue="Search for products or brands"></input>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </form>
         <span>Login</span>
       </header>

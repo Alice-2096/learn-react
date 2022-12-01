@@ -6,16 +6,16 @@ export default function NumGenerator() {
   let [numArray, setNumArray] = useState([]);
 
   function generate_nums(inputVal) {
-    setNumArray([]);
     let counter = 1;
     let val = inputVal;
+    let tmpArr = [];
     while (counter <= 10) {
-      let tmp = <div>{val * counter}</div>;
-      //? would not work if I move the above line inside setNumArray, WHY?
-      // ?see console warning
-      setNumArray((x) => [...x, tmp]);
+      tmpArr.push(<div>{val * counter}</div>);
       counter++;
     }
+    // setNumArray is async, setState function should always go outside of a loop
+    setNumArray(tmpArr);
+
     //reset input
     setInputVal('');
   }

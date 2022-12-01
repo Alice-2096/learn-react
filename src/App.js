@@ -33,16 +33,14 @@ function App() {
 
   return (
     <div className="App">
-      {/* transition css is not working?? */}
       {/* <QandA></QandA> */}
 
-      {/* where to add the sort method? */}
       {/* <SongPage></SongPage> */}
 
       {/* <NumGenerator></NumGenerator> */}
 
       {/* need to fix css magnifier | scroll to the right  */}
-      {/* <MobilePage></MobilePage> */}
+      <MobilePage></MobilePage>
     </div>
   );
 }
