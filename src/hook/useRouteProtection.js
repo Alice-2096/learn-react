@@ -6,7 +6,7 @@ export default () => {
 
   useEffect(() => {
     //this code will be execute on every pageload
-    if (!localStorage.getItem('isLoggedIn') != 'true') {
+    if (localStorage.getItem('isLoggedIn') != 'true') {
       navigate('/login');
     }
   }, []);

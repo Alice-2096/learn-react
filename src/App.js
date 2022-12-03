@@ -31,7 +31,6 @@ function App() {
         // redirection 
         <Route path="/feedback" element={<Navigate to="/mobile" />}></Route> */}
         <Route path="login" element={<Login></Login>}></Route>
-        <Route path="logout" element={<LogOut></LogOut>}></Route>
         <Route path="sign-up" element={<SignUp></SignUp>}></Route>
         <Route path="dashboard" element={<Dashboard></Dashboard>}></Route>
         <Route path="about" element={<About></About>}></Route>
