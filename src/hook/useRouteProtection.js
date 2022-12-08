@@ -10,4 +10,14 @@ export default () => {
       navigate('/login');
     }
   }, []);
+
+  // useEffect(() => {
+  //   return () => {
+  //     //do something on unmounting components
+  //   };
+  // }, []);
+
+  // useEffect(() => {
+  //   //do something on x's state change
+  // }, [x]);
 };
