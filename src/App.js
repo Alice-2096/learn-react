@@ -10,6 +10,7 @@ import Header from './shared/components/Header';
 import CounterWithClass from './shared/components/CounterWithClass';
 import Accordion from './Accordion';
 import Tiktoc from './Tiktoc';
+import HeadingPortal from './portal/HeadingPortal';
 
 function App() {
   // let [ratingVal, setRatingVal] = useState(0);
@@ -40,8 +41,10 @@ function App() {
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes> */}
       {/* <CounterWithClass start={5}></CounterWithClass> */}
-      {/* <Accordion heading={'hello'} content={'this is a test'}></Accordion>
-      <Tiktoc></Tiktoc> */}
+      <Accordion heading={'hello'} content={'this is a test'}></Accordion>
+      <Tiktoc></Tiktoc>
+
+      <HeadingPortal></HeadingPortal>
     </div>
   );
 }
