@@ -11,6 +11,7 @@ import CounterWithClass from './shared/components/CounterWithClass';
 import Accordion from './Accordion';
 import Tiktoc from './Tiktoc';
 import HeadingPortal from './portal/HeadingPortal';
+import UserDataContext from './shared/data/UserGlobalData';
 
 function App() {
   // let [ratingVal, setRatingVal] = useState(0);
@@ -25,26 +26,31 @@ function App() {
   //   setItems((items) => items.filter((x) => x !== itemName));
   // }
 
+  const [userData, setUserData] = useState({ username: 'Sagar' });
+
   return (
     <div className="App">
-      {/* <Header></Header>
-      <hr></hr>
-      <Routes> */}
-      {/* go to 'domain/counter' will see Mobilepage Component only */}
-      {/* <Route path="/mobile" element={<MobilePage></MobilePage>}></Route>
-        // redirection 
-        <Route path="/feedback" element={<Navigate to="/mobile" />}></Route> */}
-      {/* <Route path="login" element={<Login></Login>}></Route>
-        <Route path="sign-up" element={<SignUp></SignUp>}></Route>
-        <Route path="dashboard" element={<Dashboard></Dashboard>}></Route>
-        <Route path="about" element={<About></About>}></Route>
-        <Route path="*" element={<NotFound></NotFound>}></Route>
-      </Routes> */}
-      {/* <CounterWithClass start={5}></CounterWithClass> */}
-      <Accordion heading={'hello'} content={'this is a test'}></Accordion>
-      <Tiktoc></Tiktoc>
+      <UserDataContext.Provider value={userData}>
+        <Header></Header>
+        <hr></hr>
+        <Routes>
+          {/* go to 'domain/counter' will see Mobilepage Component only */}
+          {/* <Route path="/mobile" element={<MobilePage></MobilePage>}></Route>
+          // redirection
+          <Route path="/feedback" element={<Navigate to="/mobile" />}></Route> */}
+          <Route path="login" element={<Login></Login>}></Route>
+          <Route path="sign-up" element={<SignUp></SignUp>}></Route>
+          <Route path="dashboard" element={<Dashboard></Dashboard>}></Route>
+          <Route path="about" element={<About></About>}></Route>
+          <Route path="*" element={<NotFound></NotFound>}></Route>
+        </Routes>
+      </UserDataContext.Provider>
+      {/* <CounterWithClass start={5}></CounterWithClass>
+      {/* <Accordion heading={'hello'} content={'this is a test'}></Accordion>
+      <Tiktoc></Tiktoc> */}
 
-      <HeadingPortal></HeadingPortal>
+      {/* portal */}
+      {/* <HeadingPortal></HeadingPortal> */}
     </div>
   );
 }
