@@ -15,3 +15,5 @@ export default function Post({ heading, author, tag, date, body }) {
     </div>
   );
 }
+
+
