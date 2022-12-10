@@ -4,10 +4,5 @@ import Counter from '../../Counter.js';
 
 export default function About() {
   useRouteProtection();
-  return (
-    <div>
-      About
-      <Counter start={1}></Counter>
-    </div>
-  );
+  return <div>About</div>;
 }

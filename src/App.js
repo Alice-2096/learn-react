@@ -40,8 +40,8 @@ function App() {
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes> */}
       {/* <CounterWithClass start={5}></CounterWithClass> */}
-      <Accordion heading={'hello'} content={'this is a test'}></Accordion>
-      <Tiktoc></Tiktoc>
+      {/* <Accordion heading={'hello'} content={'this is a test'}></Accordion>
+      <Tiktoc></Tiktoc> */}
     </div>
   );
 }
