@@ -12,6 +12,8 @@ import Accordion from './Accordion';
 import Tiktoc from './Tiktoc';
 import HeadingPortal from './portal/HeadingPortal';
 import UserDataContext from './shared/data/UserGlobalData';
+import CatFact from './CatFact';
+import Joke from './Joke';
 
 function App() {
   // let [ratingVal, setRatingVal] = useState(0);
@@ -40,6 +42,8 @@ function App() {
           <Route path="/feedback" element={<Navigate to="/mobile" />}></Route> */}
           <Route path="login" element={<Login></Login>}></Route>
           <Route path="sign-up" element={<SignUp></SignUp>}></Route>
+          <Route path="cat-fact" element={<CatFact></CatFact>}></Route>
+          <Route path="joke" element={<Joke></Joke>}></Route>
           <Route path="dashboard" element={<Dashboard></Dashboard>}></Route>
           <Route path="about" element={<About></About>}></Route>
           <Route path="*" element={<NotFound></NotFound>}></Route>
