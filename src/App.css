@@ -128,3 +128,29 @@
   
 }
 
+/* user profile */
+.profile-container {
+  background-color: rgb(255, 213, 197);
+  position: relative;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  height: 300px;
+}
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.user-info {
+  list-style: none;
+}
+.user-info span {
+  font-weight: bolder;
+}
+.fa-solid{
+  font-size: 2rem;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}

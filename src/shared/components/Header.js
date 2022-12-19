@@ -14,6 +14,7 @@ export default function Header() {
       <Link to={'/about'}>About</Link>
       <Link to={'/cat-fact'}>Cat Fact</Link>
       <Link to={'/joke'}>Joke</Link>
+      <Link to={'/profile'}>Profile</Link>
       <Link to={'/dashboard'}>Dashboard</Link>
       <Link to={'/sign-up'}>Sign up</Link>
       <Link to={'/login'}>Login</Link>

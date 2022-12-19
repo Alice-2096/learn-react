@@ -14,6 +14,7 @@ import HeadingPortal from './portal/HeadingPortal';
 import UserDataContext from './shared/data/UserGlobalData';
 import CatFact from './CatFact';
 import Joke from './Joke';
+import Profile from './pages/profile/Profile';
 
 function App() {
   // let [ratingVal, setRatingVal] = useState(0);
@@ -43,6 +44,7 @@ function App() {
           <Route path="login" element={<Login></Login>}></Route>
           <Route path="sign-up" element={<SignUp></SignUp>}></Route>
           <Route path="cat-fact" element={<CatFact></CatFact>}></Route>
+          <Route path="profile" element={<Profile></Profile>}></Route>
           <Route path="joke" element={<Joke></Joke>}></Route>
           <Route path="dashboard" element={<Dashboard></Dashboard>}></Route>
           <Route path="about" element={<About></About>}></Route>
